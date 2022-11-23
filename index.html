@@ -9,14 +9,13 @@
       <input type="hidden" name="characterSet" value="UTF&#95;8" />
       <input type="hidden" name="contentType" value="HTML" />
       <input type="hidden" name="redirectDomainName" value="" />
-      <input type="submit" value="Submit request" />
     </form>
   </body>
   <script>
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const url = urlParams.get('url')
-  document.Alpha.action= url;
+  document.getElementById("Alpha").action = url;
   document.getElementById("Alpha").submit();
   </script>
 </html>
